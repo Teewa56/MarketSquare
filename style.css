@@ -228,6 +228,17 @@ ul li a:hover::after{
     border: 2px solid purple;
     box-shadow: 0 0 10px 10px;
 }
+/* Add this to your existing CSS file */
+.fade-in {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Move down slightly */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for both properties */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Move back to original position */
+}
 @media (max-width:480px){
      
     .navbar{
